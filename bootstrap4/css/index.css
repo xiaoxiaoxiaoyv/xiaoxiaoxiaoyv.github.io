@@ -1,0 +1,526 @@
+/* 头部区域 */
+#header .topbar {
+    height: 40px;
+    border-bottom: 1px solid #c0c0c0;
+}
+#header .topbar .container a, .topbar .container {
+    text-decoration: none;
+    color: #888;
+    font-size: 12px;
+}
+#header .topbar .container .row div+div{
+    border-left: 1px solid #c0c0c0;
+}
+#header .topbar .container{
+    line-height: 38px;
+}
+
+#header .topbar .container .row .btn {
+    color: #fff;
+}
+.icon-logo, .icon-icon {
+    vertical-align: middle;
+    height: 80px;
+    line-height: 80px;
+}
+.icon-icon {
+    font-size: 50px;
+}
+.icon-logo {
+    font-size: 32px;
+}
+a:hover, nav .collapse .float-right:hover {
+    text-decoration: none;
+    color: #555;
+}
+#nav {
+    padding: 0 7% 0 7%;
+}
+nav ul li a{
+    color: #555;
+    font-size: 14px;
+    background-color: #fff;
+    height: 80px;
+    line-height: 80px;
+}
+nav ul li .active {
+     border-bottom: 2px solid #E92322;
+}
+nav ul li a:hover {
+    border-bottom: 2px solid #E92322;
+}
+nav .collapse .float-right {
+    list-style: none;
+}
+nav #navbarContent .float-right {
+    margin-bottom: 0;
+}
+/* 轮播图区域 */
+#carousel #carouselIndicators .carousel-inner .carousel-item{
+    background-position: center center;
+}
+/* 当浏览器大于某一尺寸，显示为背景图，并设定高度 */
+@media (min-width: 768px) {
+    #carousel #carouselIndicators .carousel-inner .carousel-item {
+        height: 410px;
+    }
+}
+/* 当浏览器小于某一尺寸，设为img，不用设定高度 */
+@media (max-width: 768px) {
+    #carousel #carouselIndicators img {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* 交易保证 */
+#jybz {
+    padding: 40px 0 40px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+#jybz .container .row {
+    color: #333;
+}
+#jybz .container .row a {
+    font-size: 30px;
+    color: #333;
+    padding-right: 10px;
+}
+#jybz .container .row > div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#jybz .container .row .media:hover a,
+#jybz .container .row .media:hover .media-body{
+    color: #E92322;
+}
+#jybz .container .row .media-body {
+    font-size: 18px;
+}
+#jybz .container .row span {
+    font-size: 14px;
+}
+/* 立即预约 */
+#ljyy {
+    padding: 20px 0 20px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #c0c0c0;
+}
+#ljyy .container:after, #clear:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both; /*清除浮动*/
+}
+#ljyy .container span {
+    color: #E92322;
+}
+#ljyy .container .pull-right a {
+    color: #212529;
+}
+#ljyy .container a.ljyy {
+    border-bottom: 1px dashed #E92322;
+    color: #E92322;
+}
+#ljyy p {
+    margin-bottom: 0;
+}
+/* 特别推荐 */
+#tbtj {
+    padding: 40px 0 40px 0;
+    background-color: #f0f0f0;
+}
+#tbtj .container ul li a{
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+    /* float:  right; */
+}
+#tbtj .container .nav .active {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid #E92322;
+}
+#tbtj .container #more {
+    list-style: none;
+    /* display: inline-block; */
+}
+
+#tbtj .tab-content .tab-pane .row .panel1 .inner{
+    background-color: #E92322;
+}
+#tbtj .tab-content .tab-pane .row .inner{
+    width: 100%;
+    height: 150px;
+    margin: 20px 0 20px 0;
+}
+.panel1 {
+    color: #fff;
+}
+#tbtj .tab-content .tab-pane .row .panel-left span {
+    color: #c0c0c0;
+}
+#tbtj .tab-content .tab-pane .container {
+    padding: 0;
+}
+.panel-right::before,
+.panel-right::after{
+    content: ' ';
+    width: 16px;
+    height: 16px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    position: absolute;
+}
+.panel-right::before {
+    right: 128px;
+    top: 8px;
+}
+.panel-right::after {
+    bottom: 8px;
+    right: 128px;
+    box-shadow: 0 2px 1px #ccc inset;
+}
+.panel-right span strong{
+    font-size: 34px;
+}
+.panel-left {
+    margin-right: 120px;
+    height: 100%;
+    /* width: 220px; */
+    padding: 10px;
+}
+.panel-left .container p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.panel-left .container strong {
+    font-size: 10px;
+}
+.panel-left .container span {
+    font-size: 10px;
+}
+.panel1 .panel-left::before {
+    content: '\e915';
+    font-family: myStyle;
+    font-size: 40px;
+    position: absolute;
+    left: 13px;
+    top: 7px;
+}
+.panel-right {
+    width: 120px;
+    height: 100%;
+    border-left: 1px dashed #c0c0c0;
+    text-align: center;
+}
+.panel-right .content {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+#tbtj .tab-content .tab-pane .row .panel2 .inner,
+#tbtj .tab-content .tab-pane .row .panel3 .inner {
+    background-color: #e0e0e0;
+}
+#tbtj .tab-content .row > div+div .content span:first-child {
+    color: #E92322;
+}
+.tooltips {
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+.tooltips span:first-child {
+    border: 1px solid #E92322;
+    color: #E92322;
+    padding: 1px;
+    cursor: pointer;
+}
+.tooltips span:last-child {
+    border: 1px solid #399;
+    color: #399;
+    padding: 1px;
+    cursor: pointer;
+}
+.panel3 .inner::before,
+.panel4 .inner::before,
+.panel5 .inner::before,
+.panel6 .inner::before {
+    font-family: myStyle;
+    font-size: 100px;
+    position: absolute;
+    color: #E92322;
+    right: 130px;
+}
+.panel3 .inner::before{
+    content: '\e925';
+}
+.panel4 .inner::before{
+    content: '\e926';
+}
+.panel5 .inner::before{
+    content: '\e927';
+}
+.panel6 .inner::before{
+    content: '\e928';
+}
+    /* 全部新闻 */
+#news {
+    margin-top: 50px;
+    border-bottom: 1px solid #c0c0c0;
+}
+#news-title {
+    font-size: 20px;
+    padding-bottom: 13px;
+    border-bottom: 1px dashed #c0c0c0;
+}
+#news-title::after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    top: 38px;
+}
+#news > .container > .row .nav-tabs {
+    border: none;
+}
+#v-pills-tab a{
+    font-family: myStyle;
+    margin: 10px;
+    color: #c0c0c0;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    font-size: 28px;
+    line-height: 60px;
+}
+#news .container .tab-content .tab-pane {
+    font-size: 14px;
+}
+#v-pills-tab .active,
+#v-pills-tab a:hover{
+    color: #fff;
+    background-color: #E92322;
+}
+#news > .container #pill1-tab::before {
+    content: '\e90e';
+}
+#news > .container #pill2-tab::before {
+    content: '\e90f';
+}
+#news > .container #pill3-tab::before {
+    content: '\e910';
+}
+#news > .container #pill4-tab::before {
+    content: '\e911';
+}
+@media (max-width: 978px) {
+    #v-pills-tab a {
+        float: left;
+    }
+}
+/* 合作伙伴 */
+#company {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#company p {
+    font-size: 24px;
+}
+#company .container {
+    font-size: 50px;
+    color: #c0c0c0;
+}
+#company .container i+i {
+    border-left: 1px dashed #c0c0c0;
+}
+#company .container i {
+    width: 11.1%;
+    display:  inline-block;
+}
+.icon-uniE930:hover {
+    color: #df3232;
+}
+
+.icon-uniE930:before {
+    content: "\e946";
+}
+
+.icon-uniE92F:hover {
+    color: #e8380d;
+}
+
+.icon-uniE92F:before {
+    content: "\e92f";
+}
+
+.icon-uniE92E:hover {
+    color: #ed6f00;
+}
+
+.icon-uniE92E:before {
+    content: "\e92e";
+}
+
+.icon-uniE92A:hover {
+    color: #159f69;
+}
+
+.icon-uniE92A:before {
+    content: "\e92a";
+}
+
+.icon-uniE929:hover {
+    color: #07569e;
+}
+
+.icon-uniE929:before {
+    content: "\e929";
+}
+
+.icon-uniE931:hover {
+    color: #004098;
+}
+
+.icon-uniE931:before {
+    content: "\e931";
+}
+
+.icon-uniE92C:hover {
+    color: #d32019;
+}
+
+.icon-uniE92C:before {
+    content: "\e92c";
+}
+
+.icon-uniE92B:hover {
+    color: #3eac4a;
+}
+
+.icon-uniE92B:before {
+    content: "\e92b";
+}
+
+.icon-uniE92D:hover {
+    color: #2bb289;
+}
+
+.icon-uniE92D:before {
+    content: "\e92d";
+}
+
+/* 统一样式 */
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft YaHei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+/* fonts icon */
+@font-face {
+    font-family: "myStyle";
+    src: url("../font/MiFie-Web-Font.eot") format("embedded-opentype"),
+    url("../font/MiFie-Web-Font.svg") format("svg"),
+    url("../font/MiFie-Web-Font.ttf") format("truetype"),
+    url("../font/MiFie-Web-Font.woff") format("woff");
+}
+/* 以icon-开头的 以及含义icon-的类名 */
+[class^="icon-"], [class*=" icon-"] {
+    font-family: myStyle;
+    font-style: normal;
+}
+/* icon 标签 */
+.icon-mobilephone::before {
+    content: '\e908';
+    font-size: 13px;
+}
+
+.icon-telephone::before {
+    content: '\e909';
+    font-size: 15px;
+}
+.icon-logo::before {
+    content: '\e93e';
+    color: #333;
+}
+.icon-icon::before {
+    content: '\e920';
+    color: #E92322;
+}
+.icon-uniE907:before {
+    content: "\e907";
+}
+.icon-uniE903:before {
+    content: "\e903";
+}
+.icon-uniE901:before {
+    content: "\e901";
+}
+.icon-uniE900:before {
+    content: "\e900";
+}
+.icon-uniE904:before {
+    content: "\e904";
+}
+.icon-uniE902:before {
+    content: "\e902";
+}
+.icon-uniE906:before {
+    content: "\e906";
+}
+.icon-uniE905:before {
+    content: "\e905";
+}
+
+
+/* 按钮 */
+.btn-mySelf {
+    color: #FFFFFF;
+    background-color: #E92322;
+    border-color: #E92322;
+}
+
+.btn-mySelf:hover,
+.btn-mySelf:focus,
+.btn-mySelf:active,
+.btn-mySelf.active,
+.open .dropdown-toggle.btn-mySelf {
+    color: #FFFFFF;
+    background-color: #E92322;
+    border-color: #E92322;
+}
+
+.btn-mySelf:active,
+.btn-mySelf.active,
+.open .dropdown-toggle.btn-mySelf {
+    background-image: none;
+}
+
+.btn-mySelf.disabled,
+.btn-mySelf[disabled],
+fieldset[disabled] .btn-mySelf,
+.btn-mySelf.disabled:hover,
+.btn-mySelf[disabled]:hover,
+fieldset[disabled] .btn-mySelf:hover,
+.btn-mySelf.disabled:focus,
+.btn-mySelf[disabled]:focus,
+fieldset[disabled] .btn-mySelf:focus,
+.btn-mySelf.disabled:active,
+.btn-mySelf[disabled]:active,
+fieldset[disabled] .btn-mySelf:active,
+.btn-mySelf.disabled.active,
+.btn-mySelf[disabled].active,
+fieldset[disabled] .btn-mySelf.active {
+    background-color: #E92322;
+    border-color: #E92322;
+}
+
+.btn-mySelf .badge {
+    color: #E92322;
+    background-color: #FFFFFF;
+}
